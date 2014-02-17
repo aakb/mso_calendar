@@ -1,0 +1,14 @@
+#main-wrapper {
+  background: url('../images/bg-sandpaper.png');
+}
+
+#main {
+  margin-top: 0;
+  padding-top: 10px;
+
+  background-color: #fff;
+}
+
+#logo {
+  padding-bottom: 35px;
+}

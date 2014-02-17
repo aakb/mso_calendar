@@ -4,6 +4,7 @@ core = 7.x
 base theme = responsive_bartik
 
 stylesheets[all][] = css/colors.css
+stylesheets[all][] = css/custom-layout.css
 
 regions[header] = Header
 regions[help] = Help
