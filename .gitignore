@@ -8,6 +8,7 @@ sites/*/files
 sites/*/private
 
 # Ignore default text files
+sites.php
 .htaccess
 robots.txt
 /CHANGELOG.txt
@@ -31,7 +32,6 @@ update.php
 xmlrpc.php
 /includes
 /misc
-/modules
 /profiles
 /scripts
 
