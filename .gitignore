@@ -34,7 +34,6 @@ xmlrpc.php
 /modules
 /profiles
 /scripts
-/themes
 
 settings.php
 drushrc.php
