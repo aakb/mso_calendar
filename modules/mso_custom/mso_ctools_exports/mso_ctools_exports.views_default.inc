@@ -23,6 +23,7 @@ function mso_ctools_exports_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'Calendar events';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['link_display'] = 'page_1';
   $handler->display->display_options['access']['type'] = 'perm';
@@ -108,14 +109,17 @@ function mso_ctools_exports_views_default_views() {
   $handler->display->display_options['arguments']['date_argument']['date_fields'] = array(
     'field_data_field_date_time.field_date_time_value' => 'field_data_field_date_time.field_date_time_value',
   );
-  $handler->display->display_options['path'] = 'calendar-node-field-date-time/month';
-  $handler->display->display_options['menu']['type'] = 'default tab';
+  $handler->display->display_options['path'] = 'calendar/month';
+  $handler->display->display_options['menu']['type'] = 'tab';
   $handler->display->display_options['menu']['title'] = 'Month';
   $handler->display->display_options['menu']['weight'] = '0';
+  $handler->display->display_options['menu']['name'] = 'main-menu';
   $handler->display->display_options['menu']['context'] = 0;
+  $handler->display->display_options['menu']['context_only_inline'] = 0;
   $handler->display->display_options['tab_options']['type'] = 'normal';
   $handler->display->display_options['tab_options']['title'] = 'Calendar';
   $handler->display->display_options['tab_options']['weight'] = '0';
+  $handler->display->display_options['tab_options']['name'] = 'main-menu';
 
   /* Display: Week */
   $handler = $view->new_display('page', 'Week', 'page_2');
@@ -149,7 +153,7 @@ function mso_ctools_exports_views_default_views() {
   $handler->display->display_options['arguments']['date_argument']['date_fields'] = array(
     'field_data_field_date_time.field_date_time_value' => 'field_data_field_date_time.field_date_time_value',
   );
-  $handler->display->display_options['path'] = 'calendar-node-field-date-time/week';
+  $handler->display->display_options['path'] = 'calendar/week';
   $handler->display->display_options['menu']['type'] = 'tab';
   $handler->display->display_options['menu']['title'] = 'Week';
   $handler->display->display_options['menu']['weight'] = '2';
@@ -186,7 +190,7 @@ function mso_ctools_exports_views_default_views() {
   $handler->display->display_options['arguments']['date_argument']['date_fields'] = array(
     'field_data_field_date_time.field_date_time_value' => 'field_data_field_date_time.field_date_time_value',
   );
-  $handler->display->display_options['path'] = 'calendar-node-field-date-time/day';
+  $handler->display->display_options['path'] = 'calendar/day';
   $handler->display->display_options['menu']['type'] = 'tab';
   $handler->display->display_options['menu']['title'] = 'Day';
   $handler->display->display_options['menu']['weight'] = '3';
@@ -251,7 +255,7 @@ function mso_ctools_exports_views_default_views() {
   $handler->display->display_options['arguments']['date_argument']['date_fields'] = array(
     'field_data_field_date_time.field_date_time_value' => 'field_data_field_date_time.field_date_time_value',
   );
-  $handler->display->display_options['path'] = 'calendar-node-field-date-time/year';
+  $handler->display->display_options['path'] = 'calendar/year';
   $handler->display->display_options['menu']['type'] = 'tab';
   $handler->display->display_options['menu']['title'] = 'Year';
   $handler->display->display_options['menu']['weight'] = '4';
@@ -325,6 +329,7 @@ function mso_ctools_exports_views_default_views() {
   );
   $translatables['calendar'] = array(
     t('Master'),
+    t('Calendar events'),
     t('more'),
     t('Apply'),
     t('Reset'),
@@ -354,7 +359,7 @@ function mso_ctools_exports_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Calender Events';
+  $handler->display->display_options['title'] = 'Calender events';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -598,13 +603,20 @@ function mso_ctools_exports_views_default_views() {
   $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['created']['element_wrapper_type'] = 'div';
   $handler->display->display_options['fields']['created']['date_format'] = 'custom_long';
-  $handler->display->display_options['path'] = 'calenderevents';
-  $handler->display->display_options['menu']['type'] = 'normal';
-  $handler->display->display_options['menu']['title'] = 'Calender Events';
+  $handler->display->display_options['path'] = 'calendar/list';
+  $handler->display->display_options['menu']['type'] = 'default tab';
+  $handler->display->display_options['menu']['title'] = 'Events list';
+  $handler->display->display_options['menu']['weight'] = '0';
   $handler->display->display_options['menu']['name'] = 'main-menu';
+  $handler->display->display_options['menu']['context'] = 0;
+  $handler->display->display_options['menu']['context_only_inline'] = 0;
+  $handler->display->display_options['tab_options']['type'] = 'normal';
+  $handler->display->display_options['tab_options']['title'] = 'Events calendar';
+  $handler->display->display_options['tab_options']['weight'] = '0';
+  $handler->display->display_options['tab_options']['name'] = 'main-menu';
   $translatables['calenderevents'] = array(
     t('Master'),
-    t('Calender Events'),
+    t('Calender events'),
     t('more'),
     t('Apply'),
     t('Reset'),
