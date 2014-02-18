@@ -177,6 +177,61 @@
           <?php print render($action_links); ?>
         </ul>
       <?php endif; ?>
+        <div class="view view-calenderevents view-id-calenderevents view-display-id-page view-dom-id-77224c49f9e5dbd6ef92f0b1728daca7">
+
+          <div class="view-filters">
+            <form accept-charset="UTF-8" id="views-exposed-form-calenderevents-page" method="get" action="/calendar/list" class="ctools-auto-submit-full-form ctools-auto-submit-processed"><div><div class="views-exposed-form">
+                  <div class="views-exposed-widgets clearfix">
+                    <div class="views-exposed-widget views-widget-filter-field_target_audience_tid" id="edit-field-target-audience-tid-wrapper">
+                      <label for="edit-field-target-audience-tid">
+                        Filtrér på målgruppe:</label>
+                      <div class="views-widget">
+                        <div class="form-item form-type-select form-item-field-target-audience-tid">
+                          <select class="form-select" name="field_target_audience_tid" id="edit-field-target-audience-tid"><option selected="selected" value="All">- Any -</option><option value="11">Alle</option><option value="6">Ledere</option><option value="7">Medarbejdere</option><option value="8">Frivillige</option><option value="9">Borgere</option></select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="views-exposed-widget views-submit-button">
+                      <input type="submit" value="Apply" name="" id="edit-submit-calenderevents" class="ctools-use-ajax ctools-auto-submit-click js-hide form-submit">    </div>
+                  </div>
+                </div>
+              </div></form>    </div>
+
+
+          <div class="view-content">
+            <div class="views-row views-row-1 views-row-odd views-row-first">
+              <h2><a href="#">Ambitioni dedisse scripsisse iudicaretur prima luce</a></h2>
+              <div class="views-field views-field-field-description">
+                Tityre, tu patulae recubans sub tegmine fagi  dolor. Fictum,  deserunt mollit anim laborum astutumque!
+              </div>
+              <div class="views-field views-field-created">
+                Mandag 4. februar 2014, Lokalcenter Abildgården.
+              </div>
+              <div class="views-field">&#187; <a href="http://mso.local/node/8">Ambitioni dedisse scripsisse iudicaretur prima luce</a></div>
+            </div>
+            <div class="views-row views-row-1 views-row-odd views-row-first">
+              <h2><a href="#">Ambitioni dedisse scripsisse iudicaretur prima luce</a></h2>
+              <div class="views-field views-field-field-description">
+                Tityre, tu patulae recubans sub tegmine fagi  dolor. Fictum,  deserunt mollit anim laborum astutumque!
+              </div>
+              <div class="views-field views-field-created">
+                Mandag 4. februar 2014, Lokalcenter Abildgården.
+              </div>
+              <div class="views-field">&#187; <a href="http://mso.local/node/8">Ambitioni dedisse scripsisse iudicaretur prima luce</a></div>
+            </div>
+            <div class="views-row views-row-1 views-row-odd views-row-first">
+              <h2><a href="#">Ambitioni dedisse scripsisse iudicaretur prima luce</a></h2>
+              <div class="views-field views-field-field-description">
+                Tityre, tu patulae recubans sub tegmine fagi  dolor. Fictum,  deserunt mollit anim laborum astutumque!
+              </div>
+              <div class="views-field views-field-created">
+                Mandag 4. februar 2014, Lokalcenter Abildgården.
+              </div>
+              <div class="views-field">&#187; <a href="http://mso.local/node/8">Ambitioni dedisse scripsisse iudicaretur prima luce</a></div>
+            </div>
+          </div>
+        </div>
+
       <?php print render($page['content']); ?>
       <?php print $feed_icons; ?>
 
