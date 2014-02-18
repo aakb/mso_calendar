@@ -1,5 +1,31 @@
-#main-wrapper {
-  background: url('../images/bg-sandpaper.png');
+/* ------------------- Fonts ------------------------------ */
+
+body,
+#site-slogan,
+.ui-widget,
+.comment-form label {
+  font-family: Arial, sans-serif;
+}
+#header,
+#footer-wrapper,
+#skip-link,
+ul.contextual-links,
+ul.links,
+ul.primary,
+.item-list .pager,
+div.field-type-taxonomy-term-reference,
+div.messages,
+div.meta,
+p.comment-time,
+table,
+.breadcrumb {
+  font-family: Arial, sans-serif;
+}
+input,
+textarea,
+select,
+a.button {
+  font-family: Arial, sans-serif;
 }
 
 #main {
