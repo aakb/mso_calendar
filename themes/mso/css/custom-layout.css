@@ -92,3 +92,9 @@ a.button {
 .node-event .field-name-field-date-time {
   color: grey;
 }
+
+.calendar-calendar .month-view .full td.multi-day .inner div a,
+.calendar-calendar .week-view .full td.multi-day .inner div a {
+  color: #fff;
+  text-decoration: underline;
+}
