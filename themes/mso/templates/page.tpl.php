@@ -177,6 +177,46 @@
           <?php print render($action_links); ?>
         </ul>
       <?php endif; ?>
+        <h1 id="page-title" class="title">Ambitioni dedisse scripsisse iudicaretur prima luce</h1>
+        <article role="article" typeof="sioc:Item foaf:Document" about="/node/8" class="node node-event node-full clearfix" id="node-8">
+          <div class="content clearfix">
+            <div class="field field-name-field-date-time field-type-datetime field-label-above">
+              <div class="field-items">
+                <div class="field-item even">
+                  <span content="2014-01-14T14:45:00+01:00" datatype="xsd:dateTime" property="dc:date" class="date-display-single">Tuesday, January 14, 2014 - 14:45, Lokalcenter Abildgården</span>
+                </div>
+              </div>
+            </div>
+            <div class="field field-name-field-event-type field-type-taxonomy-term-reference field-label-above clearfix">
+              <h3 class="field-label">Event Type: </h3>
+              <ul class="links">
+                <li class="taxonomy-term-reference-0">
+                  <a datatype="" property="rdfs:label skos:prefLabel" typeof="skos:Concept" href="/taxonomy/term/3">Fagligt arrangement</a>
+                </li>
+              </ul>
+            </div>
+            <div class="field field-name-field-target-audience field-type-taxonomy-term-reference field-label-above clearfix"><h3 class="field-label">Target Audience: </h3>
+              <ul class="links">
+                <li class="taxonomy-term-reference-0">
+                  <a datatype="" property="rdfs:label skos:prefLabel" typeof="skos:Concept" href="/taxonomy/term/6">Ledere</a>
+                </li>
+              </ul>
+            </div>
+            <div class="field field-name-field-description field-type-text-long field-label-above">
+              <div class="field-items">
+                <div class="field-item even">Tityre, tu patulae recubans sub tegmine fagi  dolor. Fictum,  deserunt mollit anim laborum astutumque!</div>
+              </div>
+            </div>
+            <div class="field field-name-field-contact field-type-text field-label-above">
+              <div class="field-label">Contact:&nbsp;</div>
+              <div class="field-items">
+                <div class="field-item even">sfdadf</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+
         <div class="view view-calenderevents view-id-calenderevents view-display-id-page view-dom-id-77224c49f9e5dbd6ef92f0b1728daca7">
 
           <div class="view-filters">
@@ -205,7 +245,7 @@
                 Tityre, tu patulae recubans sub tegmine fagi  dolor. Fictum,  deserunt mollit anim laborum astutumque!
               </div>
               <div class="views-field views-field-created">
-                Mandag 4. februar 2014, Lokalcenter Abildgården.
+                Mandag 4. februar 2014, Lokalcenter Abildgården
               </div>
               <div class="views-field">&#187; <a href="http://mso.local/node/8">Ambitioni dedisse scripsisse iudicaretur prima luce</a></div>
             </div>
@@ -215,7 +255,7 @@
                 Tityre, tu patulae recubans sub tegmine fagi  dolor. Fictum,  deserunt mollit anim laborum astutumque!
               </div>
               <div class="views-field views-field-created">
-                Mandag 4. februar 2014, Lokalcenter Abildgården.
+                Mandag 4. februar 2014, Lokalcenter Abildgården
               </div>
               <div class="views-field">&#187; <a href="http://mso.local/node/8">Ambitioni dedisse scripsisse iudicaretur prima luce</a></div>
             </div>
@@ -225,7 +265,7 @@
                 Tityre, tu patulae recubans sub tegmine fagi  dolor. Fictum,  deserunt mollit anim laborum astutumque!
               </div>
               <div class="views-field views-field-created">
-                Mandag 4. februar 2014, Lokalcenter Abildgården.
+                Mandag 4. februar 2014, Lokalcenter Abildgården
               </div>
               <div class="views-field">&#187; <a href="http://mso.local/node/8">Ambitioni dedisse scripsisse iudicaretur prima luce</a></div>
             </div>
