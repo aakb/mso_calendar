@@ -429,6 +429,7 @@ function mso_ctools_exports_views_default_views() {
   $handler->display->display_options['sorts']['field_date_time_value']['id'] = 'field_date_time_value';
   $handler->display->display_options['sorts']['field_date_time_value']['table'] = 'field_data_field_date_time';
   $handler->display->display_options['sorts']['field_date_time_value']['field'] = 'field_date_time_value';
+  $handler->display->display_options['sorts']['field_date_time_value']['order'] = 'DESC';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -533,8 +534,8 @@ function mso_ctools_exports_views_default_views() {
   $handler->display->display_options['fields']['created']['date_format'] = 'custom_long';
   $handler->display->display_options['path'] = 'events/rss.xml';
   $handler->display->display_options['displays'] = array(
-    'page' => 'page',
     'default' => 0,
+    'page' => 0,
   );
 
   /* Display: Page */
@@ -549,41 +550,30 @@ function mso_ctools_exports_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Field: Content: Date/Time */
-  $handler->display->display_options['fields']['field_date_time']['id'] = 'field_date_time';
-  $handler->display->display_options['fields']['field_date_time']['table'] = 'field_data_field_date_time';
-  $handler->display->display_options['fields']['field_date_time']['field'] = 'field_date_time';
-  $handler->display->display_options['fields']['field_date_time']['label'] = 'excluded';
-  $handler->display->display_options['fields']['field_date_time']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_date_time']['alter']['strip_tags'] = TRUE;
-  $handler->display->display_options['fields']['field_date_time']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_date_time']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['field_date_time']['settings'] = array(
-    'format_type' => 'date',
-    'fromto' => 'value',
-    'multiple_number' => '',
-    'multiple_from' => '',
-    'multiple_to' => '',
-  );
-  /* Field: Global: Custom text */
-  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
-  $handler->display->display_options['fields']['nothing']['table'] = 'views';
-  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
-  $handler->display->display_options['fields']['nothing']['label'] = '';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = '[title] ([field_date_time])';
-  $handler->display->display_options['fields']['nothing']['alter']['strip_tags'] = TRUE;
-  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['nothing']['element_wrapper_type'] = 'h2';
-  $handler->display->display_options['fields']['nothing']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Field: Content: Place */
+  $handler->display->display_options['fields']['field_place']['id'] = 'field_place';
+  $handler->display->display_options['fields']['field_place']['table'] = 'field_data_field_place';
+  $handler->display->display_options['fields']['field_place']['field'] = 'field_place';
+  $handler->display->display_options['fields']['field_place']['label'] = 'excluded';
+  $handler->display->display_options['fields']['field_place']['exclude'] = TRUE;
   /* Field: Content: Path */
   $handler->display->display_options['fields']['path']['id'] = 'path';
   $handler->display->display_options['fields']['path']['table'] = 'node';
   $handler->display->display_options['fields']['path']['field'] = 'path';
   $handler->display->display_options['fields']['path']['label'] = '';
-  $handler->display->display_options['fields']['path']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['path']['exclude'] = TRUE;
   $handler->display->display_options['fields']['path']['alter']['path'] = '[path]';
   $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['path']['absolute'] = TRUE;
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<a href="[path]">[title]</a>';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing']['element_wrapper_type'] = 'h2';
+  $handler->display->display_options['fields']['nothing']['element_default_classes'] = FALSE;
   /* Field: Content: Description */
   $handler->display->display_options['fields']['field_description']['id'] = 'field_description';
   $handler->display->display_options['fields']['field_description']['table'] = 'field_data_field_description';
@@ -598,9 +588,19 @@ function mso_ctools_exports_views_default_views() {
   $handler->display->display_options['fields']['created']['table'] = 'node';
   $handler->display->display_options['fields']['created']['field'] = 'created';
   $handler->display->display_options['fields']['created']['label'] = '';
+  $handler->display->display_options['fields']['created']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['created']['alter']['text'] = '[created], [field_place]';
   $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['created']['element_wrapper_type'] = 'div';
-  $handler->display->display_options['fields']['created']['date_format'] = 'custom_long';
+  $handler->display->display_options['fields']['created']['date_format'] = 'long';
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing_1']['id'] = 'nothing_1';
+  $handler->display->display_options['fields']['nothing_1']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing_1']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing_1']['label'] = '';
+  $handler->display->display_options['fields']['nothing_1']['alter']['text'] = '&#187; <a href="[path]">[title]</a>';
+  $handler->display->display_options['fields']['nothing_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing_1']['element_wrapper_type'] = 'div';
   $handler->display->display_options['path'] = 'calendar/list';
   $handler->display->display_options['menu']['type'] = 'default tab';
   $handler->display->display_options['menu']['title'] = 'Events list';
@@ -638,6 +638,9 @@ function mso_ctools_exports_views_default_views() {
     t('Target Audience'),
     t('Data export'),
     t('Page'),
+    t('<a href="[path]">[title]</a>'),
+    t('[created], [field_place]'),
+    t('&#187; <a href="[path]">[title]</a>'),
   );
   $views['calenderevents'] = $view;
 
