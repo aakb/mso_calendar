@@ -118,7 +118,7 @@ a:focus {
   float: left;
 }
 
-ul.links {
+.field-type-taxonomy-term-reference ul.links {
   color: #3b3b3b;
   font-weight: normal;
 }
