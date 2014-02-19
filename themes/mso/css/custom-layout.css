@@ -115,4 +115,5 @@ a:focus {
 .field-type-taxonomy-term-reference ul.links {
   font-size: 1em;
   font-weight: bold;
+  float: left;
 }
