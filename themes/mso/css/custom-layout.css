@@ -28,6 +28,12 @@ a.button {
   font-family: Arial, sans-serif;
 }
 
+a:hover,
+a:focus {
+  /* Make sure hover is always darker and does not get overridden by color module */
+  color: #3f7512 !important;
+}
+
 #main {
   margin-top: 0;
   padding-top: 10px;
@@ -35,8 +41,14 @@ a.button {
 }
 
 #logo {
-  padding-top: 35px;
-  padding-bottom: 35px;
+  padding: 35px 20px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#logo img {
+  width: 100%;
 }
 
 .view-calenderevents .views-row {
