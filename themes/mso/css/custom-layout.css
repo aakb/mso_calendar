@@ -110,3 +110,9 @@ a:focus {
   color: #fff;
   text-decoration: underline;
 }
+
+.field-type-taxonomy-term-reference .field-label,
+.field-type-taxonomy-term-reference ul.links {
+  font-size: 1em;
+  font-weight: bold;
+}
