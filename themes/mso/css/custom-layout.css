@@ -117,3 +117,7 @@ a:focus {
   font-weight: bold;
   float: left;
 }
+
+ul.links {
+  color: #3b3b3b;
+}
