@@ -1,0 +1,6 @@
+name = mso_ctools_exports export module
+description = Export objects from CTools
+dependencies[] = views
+dependencies[] = views_data_export
+package = Chaos tool suite
+core = 7.x

@@ -1,37 +1,30 @@
-# Ignore configuration files that may contain sensitive information.
-sites/*/*settings*.php
+# Assorted IDE & editor files
+# --------------------------------
+*.esproj
+*.kpf
+*.tmproj
+.cache
+.project
+.settings
+*/_notes
+nbproject
+.DS_Store
+._*
+drushrc.php
 
-# Ignore paths that contain generated content.
-cache/
-files/
-sites/*/files
-sites/*/private
+# Unused version control info,
+# Patches, crud
+# -------------------------------
+CVS
+*.patch
+*~
 
-# Ignore default text files
-.htaccess
-robots.txt
-/CHANGELOG.txt
-/COPYRIGHT.txt
-/INSTALL*.txt
-/LICENSE.txt
-/MAINTAINERS.txt
-/UPGRADE.txt
-/README.txt
-sites/all/README.txt
-sites/all/modules/README.txt
-sites/all/themes/README.txt
+# Settings, files
+# ------------------------------
+settings.php
+files
+private
 
-# Ignore everything but the "sites" folder ( for non core developer )
-web.config
-authorize.php
-cron.php
-index.php
-install.php
-update.php
-xmlrpc.php
-/includes
-/misc
-/modules
-/profiles
-/scripts
-/themes
+*/.sass-cache
+/modules/contrib/coder/
+/modules/contrib/examples/
