@@ -71,6 +71,7 @@ a:focus {
 .view-calenderevents .views-exposed-widget label,
 .view-calenderevents .views-exposed-widget .views-widget {
   display: inline-block;
+  vertical-align: top;
 }
 
 .view-calenderevents .views-exposed-form {
